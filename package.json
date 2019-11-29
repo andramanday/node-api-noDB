@@ -1,0 +1,27 @@
+{
+  "name": "node-api-noDB",
+  "version": "1.0.0",
+  "description": "for learning api node",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel index.js -d dist",
+    "start": "nodemon dist",
+    "serve": "node dist",
+    "test": "nodemon --exec babel-node index.js"
+  },
+  "repository": "https://github.com/andramanday/node-api-noDB.git",
+  "author": "andramanday <andra.manday@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "uniqid": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/node": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "nodemon": "^2.0.1"
+  }
+}
