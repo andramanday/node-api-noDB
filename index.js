@@ -1,6 +1,9 @@
 import express from 'express'
 import bodyParse from 'body-parser'
 import uniqid from 'uniqid'
+import 'dotenv/config';
+
+const PORT = process.env.PORT
 
 const app = express()
 app.use(bodyParse.json())
@@ -85,6 +88,6 @@ app.delete('/users/:idUser', (req, res) => {
     }
 })
 
-app.listen(3000, () => {
-    console.log('server running at localhost:3000')
+app.listen(PORT, () => {
+    console.log(`server running at localhost:${PORT}`)
 })
